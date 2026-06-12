@@ -118,10 +118,10 @@ src/
   config.py           загрузка и валидация конфигурации
   scanner.py          обёртка над Masscan и парсинг JSON-вывода
   banner.py           захват баннеров и определение сервисов
-  storage.py          SQLite-персистенция и поиск новых находок
+  storage.py          SQLite-хранение
   notifier.py         уведомления в Telegram
   scheduler.py        периодический запуск
-  dashboard.py        веб-сервер: статика + JSON API
+  dashboard.py        веб-сервер с JSON API
   main.py             оркестратор и CLI
 web/                  фронтенд дашборда (HTML/CSS/JS)
 ```
