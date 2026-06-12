@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MapScan</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h1>MapScan — сканер портов</h1>
+
+  <div class="bar">
+    <button id="scan-btn" onclick="startScan()">Запустить скан</button>
+    <span id="status">статус: подключение...</span>
+    <span class="note">скан по целям из config.json</span>
+  </div>
+
+  <h2>Статистика</h2>
+  <table id="stats-table">
+    <tr><td>Хостов</td><td id="stat-hosts">0</td></tr>
+    <tr><td>Открытых портов</td><td id="stat-open">0</td></tr>
+    <tr><td>Новых находок</td><td id="stat-findings">0</td></tr>
+    <tr><td>Сканирований</td><td id="stat-scans">0</td></tr>
+  </table>
+
+  <h2>Найденные сервисы</h2>
+  <table id="services-table" border="1">
+    <thead>
+      <tr><th>IP</th><th>Порт</th><th>Сервис</th><th>Баннер</th><th>Последний раз</th></tr>
+    </thead>
+    <tbody id="services-body">
+      <tr><td colspan="5">нет данных</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Новые находки</h2>
+  <ul id="findings-list">
+    <li>нет данных</li>
+  </ul>
+
+  <script src="/app.js"></script>
+</body>
+</html>
